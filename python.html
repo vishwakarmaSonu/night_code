@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="Night Code helps kids enhance their tech and coding skills and offers courses, internships. This platform offers some great services like coding competitions, career guidance, courses related to technical skills.
+
+  ">
+  <title>NightCode - Education Website</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <!-- <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"> -->
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="/images/home33.jpg">
+<style>.login-box {
+    width: 600px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.login-box h2 {
+    text-align: center;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.login-box input[type="submit"]:hover {
+    background-color: #0056b3;
+
+}
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        .course {
+            display: none;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .python-course {
+            display: block;
+        }
+        .course h2 {
+            margin-top: 0;
+        }
+        .course p {
+            margin-bottom: 5px;
+        }
+        .course a {
+            display: block;
+            text-align: right;
+            text-decoration: none;
+            color: #007bff;
+        }</style>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">NightCode</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">NightCode</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="https://vishwakarmasonu.github.io/nightcode/" class="navbar-link" data-nav-link>Articles</a>
+          </li>
+
+          <li>
+            <a href="https://nightcodexam.pythonanywhere.com/" class="navbar-link" data-nav-link>Coding Contest</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn-outline">Log In</a>
+      <!-- <a href="#" class="btn-outline">SignUp</a> -->
+
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+
+      <!-- 
+        - #HERO
+      -->
+
+        <div  style="margin-top: 100px;" class="container">
+            <h1 >Python</h1>
+        
+            <div class="course python-course">
+                <h2>Python Programming</h2>
+                <p>Description: This course covers the fundamentals of Python programming language.</p>
+                <p>Instructor: Sonu vishwakarmaSS</p>
+                <p>Duration: 5 weeks</p>
+                <video width="640" height="360" controls autoplay loop>
+                  <source src="images/night.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a href="#" style="color: green;">Start Course</a>
+            </div>
+        
+        </div>
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">NightCode</a>
+
+          <p class="footer-text">
+            Night Code helps kids enhance their tech and coding skills and offers courses, internships. This platform offers some great services like coding competitions, career guidance, courses related to technical skills
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
+
+            <button type="submit" class="form-btn">
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Courses</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Merketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Development</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Company</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Latest News</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+            <address class="contact-link address">
+              jaipur
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+7894631546876" class="contact-link">+91 9588938688</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:info@hoolix.com" class="contact-link">nightcod6@gmail.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 NightCode | All Rights Reserved by <a href="#" class="copyright-link">NightCode</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
